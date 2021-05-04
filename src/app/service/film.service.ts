@@ -27,6 +27,7 @@ export class FilmService{
         },
       ];
 
+      
     takeOne(index:number){
         this.films[index].available='X'
     }
