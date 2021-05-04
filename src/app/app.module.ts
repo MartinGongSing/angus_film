@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import {FilmService} from './service/film.service';
 import { FilmViewComponent } from './film-view/film-view.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ThemaViewComponent } from './thema-view/thema-view.component';
+
+
 
 const appRoutes: Routes =[
   {path: 'films', component:FilmViewComponent},
@@ -27,6 +30,7 @@ const appRoutes: Routes =[
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
