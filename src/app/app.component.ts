@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from './service/users.service';
 
 
 @Component({
@@ -10,5 +11,10 @@ export class AppComponent  {
   
   title = 'Mes Films App';
 
-  constructor() { }
+  constructor(private user:UsersService) { 
+
+    this.user.getData().subscribe(data=>{
+      console.warn(data);
+    })
+  }
 }
