@@ -1,3 +1,10 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+
+
+@Injectable({
+  providedIn: 'root'
+})
 export class FilmService{
     films = [
         {
@@ -27,12 +34,22 @@ export class FilmService{
         },
       ];
 
-      
+
     takeOne(index:number){
         this.films[index].available='X'
     }
     bringOne(index:number){
         this.films[index].available='V'
+    }
+
+    constructor(private http:HttpClient) { }
+
+    getFilms(){
+      // let url2 = 'https://jsonplaceholder.typicode.com/todos/'; //Change link to API : https://localhost:8000/api/post
+
+      let url2 = 'https://localhost:8000/api/post';
+
+    return this.http.get(url2);
     }
 
 }

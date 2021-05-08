@@ -7,13 +7,11 @@ import { FilmService } from '../service/film.service';
   styleUrls: ['./film-view.component.scss']
 })
 export class FilmViewComponent implements OnInit {
-
-
   isAuth = false;
-
-
   films?: any[];
 
+  // GET DATAS FROM users.service.ts
+  dataTest:any=[]
   
   constructor(private filmService: FilmService){
     setTimeout(
@@ -21,6 +19,14 @@ export class FilmViewComponent implements OnInit {
         this.isAuth=true;
       }, 2000
   );
+
+  this.filmService.getFilms().subscribe(film=>{
+    // console.warn(film);
+    this.dataTest=film;
+    
+  })
+
+
   }
 
   ngOnInit(){

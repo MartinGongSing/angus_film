@@ -18,7 +18,7 @@ export class AppComponent  {
   constructor(private user:UsersService) { 
 
     this.user.getData().subscribe(data=>{
-      console.warn(data);
+      // console.warn(data);
       this.datas=data;
       
     })
