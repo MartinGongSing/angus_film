@@ -9,6 +9,7 @@ import { FilmService } from '../service/film.service';
 export class BibliComponent implements OnInit {
 
   @Input() filmName!: string;
+  @Input() filmYear!: number;
   @Input() filmGenre!: string;
   @Input() filmAvailable!: string;
   @Input() indexOfFilm!: number;
@@ -23,14 +24,23 @@ export class BibliComponent implements OnInit {
   }
 
   getColor(){
-    if(this.filmGenre === "Comedy"){
+    if(this.filmGenre === "Western"){
       return'orange'
     }
-    if(this.filmGenre === "Animation"){
+    if(this.filmGenre === "Classic"){
       return'blue'
     }
-    if(this.filmGenre === "Fantasy"){
+    if(this.filmGenre === "Musical"){
       return'green'
+    }
+    if(this.filmGenre === "Funny"){
+      return'red'
+    }
+    if(this.filmGenre === "B&W"){
+      return'black'
+    }
+    if(this.filmGenre === "Comedy"){
+      return'HotPink'
     }
     else {
       return'purple'

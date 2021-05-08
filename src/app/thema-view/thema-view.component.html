@@ -1,1 +1,22 @@
-<p>thema-view works!</p>
+<div class="col-xs-12">
+    <ul>
+        <app-palette *ngFor="let item of dataThema; let i = index"
+                        [indexOfthema]="i"
+                        [themaName]="item.name"
+
+                        ></app-palette>
+
+    </ul>
+    <!-- <button class="btn btn-success" 
+            [disabled]="!isAuth"
+            (click)="onAllumer()"> Tout indenter </button> -->
+
+
+
+
+
+</div>
+
+
+
+<!-- CHANGER LE BIBLI DANS UN AUTRE TRUC POUR AVOIR UNE MISE EN PAGE DIFFERENTE  -->

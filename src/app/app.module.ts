@@ -11,6 +11,7 @@ import {FilmService} from './service/film.service';
 import { FilmViewComponent } from './film-view/film-view.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ThemaViewComponent } from './thema-view/thema-view.component';
+import { PaletteComponent } from './palette/palette.component';
 
 
 
@@ -25,7 +26,8 @@ const appRoutes: Routes =[
     AppComponent,
     BibliComponent,
     FilmViewComponent,
-    ThemaViewComponent
+    ThemaViewComponent,
+    PaletteComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemaService } from '../service/thema.service';
 
 @Component({
   selector: 'app-thema-view',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThemaViewComponent implements OnInit {
 
-  constructor() { }
+  isAuth = false;
+  themas?: any[];
+  dataThema:any=[];
 
-  ngOnInit(): void {
+  constructor(private themaService: ThemaService){
+    setTimeout(
+      () => {
+        this.isAuth=true;
+      }, 2000
+  );
+  this.themaService.getThemas().subscribe(thema=>{
+    console.warn(thema);
+    this.dataThema=thema;
+    
+  })
+}
+
+
+  ngOnInit(){
+    this.themas = this.themaService.themas;
   }
 
 }

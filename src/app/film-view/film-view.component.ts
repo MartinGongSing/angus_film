@@ -11,7 +11,7 @@ export class FilmViewComponent implements OnInit {
   films?: any[];
 
   // GET DATAS FROM users.service.ts
-  dataTest:any=[]
+  dataTest:any=[];
   
   constructor(private filmService: FilmService){
     setTimeout(
