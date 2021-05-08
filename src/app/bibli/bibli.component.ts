@@ -13,6 +13,7 @@ export class BibliComponent implements OnInit {
   @Input() filmGenre!: string;
   @Input() filmAvailable!: string;
   @Input() indexOfFilm!: number;
+  @Input() filmActor!: string;
 
   constructor(private filmService: FilmService) { }
 

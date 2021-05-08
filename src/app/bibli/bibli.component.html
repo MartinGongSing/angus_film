@@ -1,19 +1,19 @@
 
 
 <li class="list-group-item">
-    <p>Availability : </p>
+    <!-- <p>Availability : </p>
     <div 
     style="width: 20px; height: 20px; background-color: red;"
     *ngIf="filmAvailable == 'X'"></div>
     <div 
     style="width: 20px; height: 20px; background-color: greenyellow;"
-    *ngIf="filmAvailable == 'V'"></div>
+    *ngIf="filmAvailable == 'V'"></div> -->
 
 
-    <h4 [ngStyle]="{color: getColor()}">Film : {{ filmName }} - Année : {{filmYear}} </h4>
-    <h5>genre : {{getGenre()}}</h5>
+    <h2 [ngStyle]="{color: getColor()}">{{ filmName }} - {{filmYear}} </h2>
+    <h4>Genre : {{getGenre()}} - {{filmActor}}</h4>
     <!-- <input type="text" class="form-control" [(ngModel)]="filmName"> -->
-    <button class="btn btn-success" (click)="onBringOne()">Rentré</button>
-    <button class="btn btn-danger" (click)="onTakeOne()">Sorti</button>
+    <!-- <button class="btn btn-success" (click)="onBringOne()">Rentré</button>
+    <button class="btn btn-danger" (click)="onTakeOne()">Sorti</button> -->
 
 </li>

@@ -10,6 +10,7 @@ export class FilmViewComponent implements OnInit {
   isAuth = false;
   films?: any[];
 
+
   // GET DATAS FROM users.service.ts
   dataTest:any=[];
   
