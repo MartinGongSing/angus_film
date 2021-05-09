@@ -47,7 +47,7 @@ export class FilmService{
     getFilms(){
       // let url2 = 'https://jsonplaceholder.typicode.com/todos/'; //Change link to API : https://localhost:8000/api/post
 
-      let url2 = 'https://localhost:8000/api/post';
+      let url2 = 'https://localhost:8000/api/film';
 
     return this.http.get(url2);
     }

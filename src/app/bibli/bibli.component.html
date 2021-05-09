@@ -10,7 +10,7 @@
     *ngIf="filmAvailable == 'V'"></div> -->
 
 
-    <h2 [ngStyle]="{color: getColor()}">{{ filmName }} - {{filmYear}} </h2>
+    <h2 [ngStyle]="{color: getColor()}">{{indexOfFilm}}) {{ filmName }} - {{filmYear}} </h2>
     <h4>Genre : {{getGenre()}} - {{filmActor}}</h4>
     <!-- <input type="text" class="form-control" [(ngModel)]="filmName"> -->
     <!-- <button class="btn btn-success" (click)="onBringOne()">Rentré</button>
