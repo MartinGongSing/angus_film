@@ -12,12 +12,14 @@ import { FilmViewComponent } from './film-view/film-view.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ThemaViewComponent } from './thema-view/thema-view.component';
 import { PaletteComponent } from './palette/palette.component';
+import { NewFilmsComponent } from './new-films/new-films.component';
 
 
 
 const appRoutes: Routes =[
   {path: 'films', component:FilmViewComponent},
   {path: 'themas', component: ThemaViewComponent},
+  {path: 'newFilms', component: NewFilmsComponent},
   {path:'', component: FilmViewComponent}
 ];
 
@@ -27,7 +29,8 @@ const appRoutes: Routes =[
     BibliComponent,
     FilmViewComponent,
     ThemaViewComponent,
-    PaletteComponent
+    PaletteComponent,
+    NewFilmsComponent
   ],
   imports: [
     BrowserModule,

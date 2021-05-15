@@ -6,7 +6,7 @@ import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 
-const endpoint = 'http://localhost:8000/api/post';
+
 
 @Injectable({
   providedIn: 'root'

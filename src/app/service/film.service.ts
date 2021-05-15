@@ -52,4 +52,6 @@ export class FilmService{
     return this.http.get(url2);
     }
 
+    
+
 }

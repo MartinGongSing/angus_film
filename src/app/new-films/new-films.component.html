@@ -1,0 +1,22 @@
+<h2>Ajoutez vos films</h2>
+
+
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+    <h3>Numéro</h3>
+    <input type="text" name="Number" ngModel placeholder="Number"> <br>
+    <h3>Titre</h3>
+    <input type="text" name="Title" ngModel placeholder="Title"> <br>
+    <h3>Acteur</h3>
+    <input type="text" name="Actor" ngModel placeholder="Actor"> <br>
+    <h3>Année</h3>
+    <input type="text" name="Year" ngModel placeholder="Year"> <br>
+    <h3>Prop</h3>
+    <input type="text" name="Prop" ngModel placeholder="Prop"> <br>
+    <h3>Info</h3>
+    <input type="text" name="Info" ngModel placeholder="Info"> <br><br>
+    <!-- <input type="json" name="thema" ngModel placeholder="Thema"> <br><br> -->
+    
+    <button type="submit">Ajouter Film</button>
+
+
+</form>
