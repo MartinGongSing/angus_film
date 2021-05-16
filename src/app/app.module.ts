@@ -13,6 +13,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ThemaViewComponent } from './thema-view/thema-view.component';
 import { PaletteComponent } from './palette/palette.component';
 import { NewFilmsComponent } from './new-films/new-films.component';
+import { NewthemesComponent } from './newthemes/newthemes.component';
 
 
 
@@ -20,6 +21,7 @@ const appRoutes: Routes =[
   {path: 'films', component:FilmViewComponent},
   {path: 'themas', component: ThemaViewComponent},
   {path: 'newFilms', component: NewFilmsComponent},
+  {path: 'newThemas', component: NewthemesComponent},
   {path:'', component: FilmViewComponent}
 ];
 
@@ -30,7 +32,8 @@ const appRoutes: Routes =[
     FilmViewComponent,
     ThemaViewComponent,
     PaletteComponent,
-    NewFilmsComponent
+    NewFilmsComponent,
+    NewthemesComponent
   ],
   imports: [
     BrowserModule,

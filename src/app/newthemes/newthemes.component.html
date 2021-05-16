@@ -1,0 +1,8 @@
+<h2>Ajoutez vos thèmes</h2>
+
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+    <h3>Nom</h3>
+    <input type="text" name="name" ngModel placeholder="name"> <br><br>
+
+    <button type="submit">Ajouter Film</button>
+</form>

@@ -13,10 +13,26 @@
     <h3>Prop</h3>
     <input type="text" name="Prop" ngModel placeholder="Prop"> <br>
     <h3>Info</h3>
-    <input type="text" name="Info" ngModel placeholder="Info"> <br><br>
+    <input type="text" name="Info" ngModel placeholder="Info"> <br>
     <!-- <input type="json" name="thema" ngModel placeholder="Thema"> <br><br> -->
-    
+
+
+    <h3>Thema</h3>
+    <select>
+        <option *ngFor="let theme of dataThema" [value]="theme.name">
+            {{theme.name}}
+        </option>
+    </select>
+    <br><br>
+
+
     <button type="submit">Ajouter Film</button>
 
 
 </form>
+
+
+<app-new-films *ngFor="let item of dataThema; let i = index"
+                [indexOfthema2]="i"
+                [themaName2]="item.name"
+        ></app-new-films>

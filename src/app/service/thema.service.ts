@@ -19,4 +19,4 @@ export class ThemaService{
     return this.http.get(url3);
     }
 
-}
+} 
