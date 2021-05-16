@@ -10,18 +10,14 @@ import { HttpClient } from '@angular/common/http';
 export class NewFilmsComponent implements OnInit {
 
   //TO GET THEMA
-  @Input() themaName2!: string;
-  @Input() indexOfthema2!: number;
+
   // GET DATAS FROM thema.service.ts
-  dataThema:any=[];
-  // themas = [];
+  dataThema:any=["aaaa","zzzz","eeeee","rrrrr"];
+
   ///////////////
 
   constructor(private http:HttpClient ) { }
-  // getThemas(){
-  //   let url3 = 'https://localhost:8000/api/thema';
-  //   return this.http.get(url3);
-  // }
+  
   
 
 

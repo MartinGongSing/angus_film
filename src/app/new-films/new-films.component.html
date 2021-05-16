@@ -17,10 +17,11 @@
     <!-- <input type="json" name="thema" ngModel placeholder="Thema"> <br><br> -->
 
 
-    <h3>Thema</h3>
-    <select>
-        <option *ngFor="let theme of dataThema" [value]="theme.name">
-            {{theme.name}}
+    <h3>Thème</h3>
+
+    <select name="thema" ngModel placeholder="Thema">
+        <option *ngFor="let theme of dataThema">
+            {{theme}}
         </option>
     </select>
     <br><br>
@@ -32,7 +33,3 @@
 </form>
 
 
-<app-new-films *ngFor="let item of dataThema; let i = index"
-                [indexOfthema2]="i"
-                [themaName2]="item.name"
-        ></app-new-films>
